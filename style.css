@@ -64,6 +64,15 @@ nav {
 
 /* Section headline */
 .headline {
+  height: 100vh;
+  background: url('./assets/background_header_mob.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  top: 55.17px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
   margin-left: 27px;
   margin-right: 27px;
   text-align: center;
@@ -116,39 +125,4 @@ nav {
 .scroll-button {
   margin-top: 83px;
   align-items: center;
-}
-
-/* mobile screen size */
-@media screen and (min-width: 375px) {
-  /* Show the hamburger menu */
-  .hamburger_toggle {
-    display: block;
-  }
-
-  /* Section headline */
-  .headline {
-    height: 100vh;
-    background: url('./assets/background_header_mob.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-    top: 55.17px;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-  }
-}
-
-/* desktop screen size */
-@media screen and (min-width: 768px) {
-  nav .hamburger_toggle {
-    display: none;
-  }
-
-  /* Background for desktop */
-  .container {
-    background-image: url('./assets/Header-desktop.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 }
