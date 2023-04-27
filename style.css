@@ -124,6 +124,7 @@ nav {
   .hamburger_toggle {
     display: block;
   }
+
   /* Section headline */
   .headline {
     height: 100vh;
@@ -135,8 +136,8 @@ nav {
     left: 0;
     bottom: 0;
     overflow: hidden;
-    }
   }
+}
 
 /* desktop screen size */
 @media screen and (min-width: 768px) {
