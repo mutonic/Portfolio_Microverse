@@ -123,21 +123,20 @@ nav {
   /* Show the hamburger menu */
   .hamburger_toggle {
     display: block;
-}
-
-/* Section headline */
-.headline {
-  height: 100vh;
-  background: url('./assets/background_header_mob.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-  top: 55.17px;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
   }
-}
+  /* Section headline */
+  .headline {
+    height: 100vh;
+    background: url('./assets/background_header_mob.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    top: 55.17px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    }
+  }
 
 /* desktop screen size */
 @media screen and (min-width: 768px) {
