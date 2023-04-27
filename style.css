@@ -1,9 +1,9 @@
-:root{
-  --header-mobile-color: #3A4A42;
+:root {
+  --header-mobile-color: #3a4a42;
   --header-desktop-color: #344563;
-  --headline-color-1: #172B4D;
-  --headline-color-2: #36B37E;
-  --background-color: #ffffff;
+  --headline-color-1: #172b4d;
+  --headline-color-2: #36b37e;
+  --background-color: #fff;
 }
 
 /* Reset the default browser styles */
@@ -14,6 +14,7 @@
   text-decoration: none;
   font-family: 'Inter', sans-serif;
 }
+
 li {
   list-style: none;
 }
@@ -30,8 +31,6 @@ nav {
   align-items: center;
   height: 48px;
 }
-
-
 
 /* Hide the nav bar on mobile */
 .navbar ul {
@@ -74,8 +73,6 @@ nav {
   display: flex;
 }
 
-
-
 /* Scroll button */
 .scroll-button {
   display: flex;
@@ -83,7 +80,7 @@ nav {
   align-items: center;
 }
 
-/*mobile screen size */
+/* mobile screen size */
 @media screen and (min-width: 375px) {
   nav {
     height: 48px;
@@ -93,9 +90,11 @@ nav {
   .hamburger_toggle {
     display: block;
   }
+
   .navbar ul {
     display: none;
   }
+
   /* Section headline */
   .headline {
     display: flex;
@@ -109,9 +108,9 @@ nav {
     top: 55.17px;
     left: 0;
     bottom: 0;
-    bottom: 0;
     overflow: hidden;
   }
+
   .headline-title {
     margin-top: 70px;
     height: 211px;
@@ -124,7 +123,9 @@ nav {
     margin-left: 27px;
     margin-right: 27px;
     text-align: center;
+
   }
+
   .headline h1 {
     font-style: normal;
     font-weight: 700;
@@ -132,10 +133,10 @@ nav {
     line-height: 52px;
     color: var(--headline-color-1);
   }
+
   .headline h1 span {
     color: var(--headline-color-2);
   }
-
 
   .headline-paragraph {
     font-weight: 400;
@@ -154,23 +155,27 @@ nav {
     width: 170px;
     margin: 22.89px auto 0 70px;
   }
+
   .headline-social ul {
     display: flex;
     flex-direction: row;
     padding: 0 10px;
     margin: 0;
   }
+
   .headline-social li {
     margin: 0 12px;
   }
   .scroll-button {
     margin-top: 70px;
   }
+
 }
 
-/*desktop screen size*/
+/* desktop screen size */
 @media screen and (min-width: 768px) {
   nav .hamburger_toggle {
     display: none;
   }
+  
 }
