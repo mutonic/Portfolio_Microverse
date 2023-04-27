@@ -72,6 +72,9 @@ nav {
   text-align: center;
 }
 
+.headline{
+  margin-top: 83px;
+}
 .headline h1 {
   font-style: normal;
   font-weight: 700;
@@ -89,6 +92,7 @@ nav {
   font-size: 20px;
   line-height: 28px;
   color: var(--headline-color-1);
+  margin-top: 25px;
 }
 
 /* Social icons */
