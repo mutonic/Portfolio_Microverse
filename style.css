@@ -144,6 +144,7 @@ nav {
   nav .hamburger_toggle {
     display: none;
   }
+  
   .container {
     background-image: url('./assets/Header-desktop.svg');
     background-repeat: no-repeat;
