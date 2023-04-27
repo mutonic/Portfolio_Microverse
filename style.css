@@ -63,10 +63,7 @@ nav {
 }
 
 /* Section headline */
-.headline,
-.headline-title,
-.headline-paragraph,
-.headline-social {
+.headline {
   margin-left: 27px;
   margin-right: 27px;
   text-align: center;
