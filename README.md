@@ -34,15 +34,15 @@
 
 # 📖 [your_project_name] <a name="about-project"></a>
 
-> This project is about building a portfolio project  with HTML CSS
+This project is about building a portfolio project  with HTML CSS
 
-**[your_project__name]** is a...
+**[your_project__name]** is a Portfolio 
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> This portfolio website built using HTML, CSS, Git and GitHub. It showcases  work, skills, and achievements, typically used by creatives and professionals to display their projects, services, and experience to potential clients or employers. 
+This portfolio website built using HTML, CSS, Git and GitHub. It showcases  work, skills, and achievements, typically used by creatives and professionals to display their projects, services, and experience to potential clients or employers. 
 
 <details>
   <summary>HTML</summary>
@@ -81,7 +81,6 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
 - [Live Demo Link](https://google.com)
 
@@ -189,7 +188,6 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[About Section]**
 - [ ] **[Project Done]**
@@ -211,7 +209,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> If you like this project, don't hesitate to give it a star to support it
+If you liked this project, don't hesitate to give it a star to support it
 
 If you like this project...
 
@@ -220,8 +218,6 @@ If you like this project...
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank...
 
