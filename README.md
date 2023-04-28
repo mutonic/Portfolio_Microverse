@@ -79,10 +79,10 @@ This portfolio website built using HTML, CSS, Git and GitHub. It showcases  work
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Not yet deployed <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](not deploy yet)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
