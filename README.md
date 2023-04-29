@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>Portfolio</b></h3>
+  <h1><b>Portfolio project</b></h1>
 
 </div>
 
@@ -32,11 +32,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Portfolio project] <a name="about-project"></a>
 
-This project is about building a portfolio project  with HTML CSS
+This project is about building a portfolio project  with HTML & CSS
 
-**[your_project__name]** is a Portfolio 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -69,20 +68,20 @@ This portfolio website built using HTML, CSS, Git and GitHub. It showcases  work
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
+- **About Me**
 - **Project Showcase**
 - **Skills**
 - **Mobile responsive**
+- **Contact**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Not yet deployed <a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](not deploy yet)
+- [Not yet deployed](not deploy yet)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,32 +89,15 @@ This portfolio website built using HTML, CSS, Git and GitHub. It showcases  work
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
-
-### Prerequisites
-
-In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  cd Portfolio-Microverse
+  git git@github.com:mutonic/Portfolio_Microverse.git
 ```
 --->
 
@@ -123,58 +105,23 @@ Example commands:
 
 Install this project with:
 
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
-
 ### Usage
 
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
+This can be used as a professional online platform to showcases your work and skills and achievements to potential clients or employers.
 
 ### Run tests
 
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
+To run tests, simply open the index.html file in any browser of your choice.
 
 ### Deployment
 
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
+To deploy this project on GitHub you can follow the instructions provided in this <a href='https://www.youtube.com/watch?v=XGcuxuhV-Jg&ab_channel=Covalence' > short video </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Author1**
 
@@ -189,9 +136,10 @@ Example:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[About Section]**
-- [ ] **[Project Done]**
-- [ ] **[Skills used]**
+- **About**
+- **Project**
+- **Skills**
+- **Contact**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -201,7 +149,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/mutonic/Portfolio_Microverse/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -209,9 +157,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you liked this project, don't hesitate to give it a star to support it
-
-If you like this project...
+If you enjoyed this project, please consider giving it a star to show your support. Also, keep an eye out for future projects that may interest you.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -219,7 +165,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank...
+I would like to thank everyone who have reviewed this project and helped to improve it
 
 ## 📝 License <a name="license"></a>
 
