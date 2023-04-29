@@ -7,6 +7,7 @@
   --project-background-color: #d0d9d4;
   --skills-background-color: #ebf0ee;
   --project-button-color: #36b37f;
+  --button-pressed-color: #008552;
 }
 
 * {
@@ -308,6 +309,14 @@ nav {
 
 .navbar li a {
   color: var(--header-mobile-color);
+}
+
+.button:active {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.button:hover {
+  background: var(--button-pressed-color);
 }
 
 form {
