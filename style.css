@@ -8,7 +8,7 @@
   --skills-background-color: #ebf0ee;
   --project-button-color: #36b37f;
   --button-pressed-color: #008552;
-  --about-me-p-color: #42526E;;
+  --about-me-p-color: #42526e;
 }
 
 * {
@@ -67,6 +67,7 @@ nav {
   width: 100%;
   margin-top: 27px;
 }
+
 .headline {
   height: 90%;
   width: 90%;
@@ -132,7 +133,7 @@ nav {
   align-items: center;
   text-align: center;
   height: 100vh;
-  margin: 10px 0px 0 0px;
+  margin: 10px 0 0 0;
 }
 
 /* Project title work */
@@ -226,7 +227,7 @@ nav {
 
 .about-me {
   background: url('./assets/about_me_bg_right.png') no-repeat, url('./assets/about_me_bg_left.png')  no-repeat;
-  background-size: 18%, 18% ;
+  background-size: 18%, 18%;
   padding-top: 68px;
   background-position: 100% -10%, left bottom;
   text-align: center;
@@ -240,13 +241,14 @@ nav {
   text-align: center;
   color: var(--headline-color-1);
 }
-.about-me p{
+
+.about-me p {
   margin-left: 12px;
   margin-right: 18px;
   padding-left: 2px;
   padding-right: 2px;
- text-align: center ;
- color: var(--about-me-p-color);
+  text-align: center;
+  color: var(--about-me-p-color);
 }
 
 .button.resume {
@@ -340,13 +342,11 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--background-color);
   width: 100%;
   height: 100vh;
   margin-bottom: 59px;
   background: url('./assets/contact_bg.png') no-repeat;
   background-position: 100% 80%, left bottom;
-
 }
 
 form {
