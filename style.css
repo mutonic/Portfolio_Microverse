@@ -125,7 +125,6 @@ nav {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 100vh;
   margin: 10px 0 0 5px;
 }
 
@@ -236,21 +235,20 @@ nav {
 }
 
 .language-grid {
-  width: 327px;
-  height: 100vh;
+  width: 85%;
+  height: 316px;
   background: var(--skills-background-color);
   border: 1px solid #c1c7d0;
   border-radius: 8px;
   margin-bottom: 24px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .language-icon img {
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 50px;
 }
 
 .language-title {
@@ -267,21 +265,12 @@ nav {
 }
 
 .language-skills ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   gap: 8px;
-  width: 100%;
-  max-width: 278px;
   margin-bottom: 32px;
 }
 
 .language-skills a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
+  float: left;
   font-size: 12px;
   font-weight: 600;
   line-height: 16px;
@@ -289,6 +278,11 @@ nav {
   color: var(--headline-color-2);
   background: var(--background-color);
   border-radius: 8px;
+  width: 65px;
+  height: 40px;
+  text-align-last: center;
+  padding: 12px;
+  margin-right: 5px;
 }
 
 .project-text {
