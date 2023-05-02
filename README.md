@@ -32,7 +32,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio project] <a name="about-project"></a>
+# 📖 Portfolio project <a name="about-project"></a>
 
 This project is about building a portfolio project  with HTML & CSS
 
@@ -81,7 +81,7 @@ This portfolio website built using HTML, CSS, Git and GitHub. It showcases  work
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Not yet deployed](not deploy yet)
+- Not yet deployed <a href='#deployment'><a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -99,7 +99,6 @@ Clone this repository to your desired folder:
   cd Portfolio-Microverse
   git git@github.com:mutonic/Portfolio_Microverse.git
 ```
---->
 
 ### Install
 
