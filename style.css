@@ -266,12 +266,11 @@ nav {
 
 .language-skills ul {
   gap: 8px;
-  margin-bottom: 32px;
 }
 
-.language-skills a {
+.language-skills li {
   float: left;
-  font-size: 12px;
+  font-size: 12px;;
   font-weight: 600;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -279,10 +278,22 @@ nav {
   background: var(--background-color);
   border-radius: 8px;
   width: 65px;
-  height: 40px;
-  text-align-last: center;
-  padding: 12px;
+  height: 30px;
+  padding-top: 4px;
   margin-right: 5px;
+}
+
+.language-skills a:last-child {
+  margin-right: 0;
+}
+
+.frameworks ul {
+  margin-top: 5px;
+}
+
+.frameworks li {
+  width: 85px;
+  height: 40px;
 }
 
 .project-text {
