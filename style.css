@@ -336,7 +336,7 @@ nav {
 .button:hover {
   background: var(--button-pressed-color);
 }
-
+/*
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -366,6 +366,8 @@ form input {
   border-radius: 4px;
   margin-bottom: 24px;
 }
+
+*/
 
 form :placeholder-shown {
   padding-left: 16px;
