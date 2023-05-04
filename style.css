@@ -365,6 +365,11 @@ form input {
   border: 1px solid var(--project-background-color);
   border-radius: 4px;
   margin-bottom: 24px;
+  padding-left: 16px;
+}
+
+form textarea {
+  padding-left: 16px;
 }
 
 form :placeholder-shown {
