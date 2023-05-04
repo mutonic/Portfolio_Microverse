@@ -8,6 +8,7 @@
   --skills-background-color: #ebf0ee;
   --project-button-color: #36b37f;
   --button-pressed-color: #008552;
+  --about-me-p-color: #42526e;
 }
 
 * {
@@ -57,15 +58,20 @@ nav {
   margin: 0 1rem;
 }
 
+.container {
+  height: 100%;
+  background: url('./assets/header_mobile.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  width: 100%;
+  margin-top: 27px;
+}
+
 .headline {
   height: 90%;
-  background: url('./assets/background_header_mob.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
+  width: 90%;
   top: 55.17px;
-  left: 0;
-  bottom: 0;
   overflow: hidden;
   margin: 0 27px;
   text-align: center;
@@ -78,6 +84,7 @@ nav {
   font-size: 40px;
   line-height: 52px;
   color: var(--headline-color-1);
+  margin-top: 83px;
 }
 
 .headline h1 span {
@@ -89,7 +96,7 @@ nav {
   font-size: 20px;
   line-height: 28px;
   color: var(--headline-color-1);
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .headline-social {
@@ -126,7 +133,7 @@ nav {
   align-items: center;
   text-align: center;
   height: 100vh;
-  margin: 10px 0 0 5px;
+  margin: 10px 0 0 0;
 }
 
 /* Project title work */
@@ -219,8 +226,12 @@ nav {
 }
 
 .about-me {
-  margin: 0 18px 0 12px;
+  background: url('./assets/about_me_bg_right.png') no-repeat, url('./assets/about_me_bg_left.png') no-repeat;
+  background-size: 18%, 18%;
+  padding-top: 68px;
+  background-position: 100% -10%, left bottom;
   text-align: center;
+  margin-bottom: 59px;
 }
 
 .about-me h2 {
@@ -228,6 +239,16 @@ nav {
   line-height: 52px;
   font-size: 40px;
   text-align: center;
+  color: var(--headline-color-1);
+}
+
+.about-me p {
+  margin-left: 12px;
+  margin-right: 18px;
+  padding-left: 2px;
+  padding-right: 2px;
+  text-align: center;
+  color: var(--about-me-p-color);
 }
 
 .button.resume {
@@ -246,11 +267,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.language-icon img {
-  height: 80px;
-  width: 80px;
 }
 
 .language-title {
@@ -273,7 +289,6 @@ nav {
   align-items: center;
   gap: 8px;
   width: 100%;
-  max-width: 278px;
   margin-bottom: 32px;
 }
 
@@ -295,9 +310,11 @@ nav {
   display: flex;
   text-align: center;
   justify-content: center;
-  width: 327px;
+  width: 100%;
   height: 363px;
-  margin: 54px 30px 24px 24px;
+  margin-left: 13px;
+  margin-right: 13px;
+  color: var(--headline-color-1);
 }
 
 .project-text h2 {
@@ -305,6 +322,7 @@ nav {
   font-size: 40px;
   line-height: 52px;
   color: var(--headline-color-1);
+  margin-right: 20px;
 }
 
 .navbar li a {
@@ -319,10 +337,23 @@ nav {
   background: var(--button-pressed-color);
 }
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 59px;
+  background: url('./assets/contact_bg.png') no-repeat;
+  background-position: 100% 80%, left bottom;
+}
+
 form {
   margin-top: 58px;
   margin-left: 24px;
   margin-right: 30px;
+  width: 85%;
 }
 
 form input {
@@ -334,6 +365,7 @@ form input {
   border: 1px solid var(--project-background-color);
   border-radius: 4px;
   margin-bottom: 24px;
+  padding-left: 16px;
 }
 
 form :placeholder-shown {
@@ -346,6 +378,7 @@ form textarea {
   background: var(--background-color);
   border: 1px solid #60c095;
   border-radius: 4px;
+  padding-left: 16px;
 }
 
 .bottom-social {
