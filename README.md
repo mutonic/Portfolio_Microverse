@@ -32,7 +32,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Portfolio project <a name="about-project"></a>
+
+
 
 This project is about building a portfolio project  with HTML CSS
 
@@ -82,7 +84,7 @@ This portfolio website built using HTML, CSS, Git and GitHub. It showcases  work
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://google.com)
+- Not yet deployed <a href='#deployment'><a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,7 +119,6 @@ Example commands:
   cd my-folder
   git clone git@github.com:myaccount/my-project.git
 ```
---->
 
 ### Install
 
