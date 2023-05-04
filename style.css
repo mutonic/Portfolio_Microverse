@@ -368,10 +368,6 @@ form input {
   padding-left: 16px;
 }
 
-form textarea {
-  padding-left: 16px;
-}
-
 form :placeholder-shown {
   padding-left: 16px;
 }
@@ -382,6 +378,7 @@ form textarea {
   background: var(--background-color);
   border: 1px solid #60c095;
   border-radius: 4px;
+  padding-left: 16px;
 }
 
 .bottom-social {
