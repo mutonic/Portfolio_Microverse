@@ -226,7 +226,7 @@ nav {
 }
 
 .about-me {
-  background: url('./assets/about_me_bg_right.png') no-repeat, url('./assets/about_me_bg_left.png')  no-repeat;
+  background: url('./assets/about_me_bg_right.png') no-repeat, url('./assets/about_me_bg_left.png') no-repeat;
   background-size: 18%, 18%;
   padding-top: 68px;
   background-position: 100% -10%, left bottom;
@@ -336,7 +336,7 @@ nav {
 .button:hover {
   background: var(--button-pressed-color);
 }
-/*
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -366,8 +366,6 @@ form input {
   border-radius: 4px;
   margin-bottom: 24px;
 }
-
-*/
 
 form :placeholder-shown {
   padding-left: 16px;
