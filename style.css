@@ -135,8 +135,9 @@ nav {
   grid-template-rows: auto 1fr;
   justify-items: center;
   text-align: center;
-  margin: 10px 0 0 0;
+  margin: 10px 20px 10px 10px;
   grid-gap: 10px;
+  width: 100%;
 }
 
 .title h2 {
@@ -273,6 +274,10 @@ nav {
   margin-bottom: 10%;
 }
 
+.language-icon img {
+  margin-left: 33.33%;
+}
+
 .language-title {
   box-sizing: content-box;
   width: 100%;
@@ -322,8 +327,6 @@ nav {
   justify-content: center;
   width: 100%;
   height: 363px;
-  
-  
   color: var(--headline-color-1);
 }
 
@@ -391,10 +394,14 @@ form textarea {
 }
 
 .text-form {
-  margin-left: 13px;
-  margin-right: 13px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.contact-info .headline-paragraph {
+  justify-content: center;
+  align-items: center;
+  margin-left: 28%;
 }
 
 .bottom-social {
@@ -408,7 +415,6 @@ form textarea {
 /* mobile screens */
 @media only screen and (max-width: 767px) {
   /* Add your mobile styles here */
-  
 }
 
 /* desktop screens */
@@ -471,6 +477,7 @@ form textarea {
   }
 
   .about-me {
+    background: none;
     margin-left: 15%;
     margin-right: 15%;
     height: 100%;
@@ -482,13 +489,62 @@ form textarea {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
   }
-  .contact-info p{
+
+  .contact-form {
+    background: none;
+    align-items: flex-start;
+  }
+
+  .text-form {
+    margin: 0 auto;
+    width: 80vh;
+    height: auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+  }
+
+  body {
+    background:
+      url('./assets/illustration-desktop-left-contact.png') no-repeat,
+      url('./assets/illustration-desktop-right-contact.png') no-repeat,
+      url('./assets/illustration-desktop-middle-right-contact.png') no-repeat;
+    background-size: 197px 195px, 200px 420px, 100px 100px;
+    background-repeat: no-repeat;
+    background-position: 1% 93%, 100% 96%, 55% 93%;
+  }
+
+  .project-text {
+    font-size: 30px;
+    text-align: left;
+    margin-left: -10%;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+
+  .project-text h2 {
+    font-size: 30px;
+    line-height: 38px;
+    margin-top: 40px;
+  }
+
+  form {
+    align-items: flex-start;
+  }
+
+  .contact-info p {
     display: none;
   }
+
   .bottom-social {
     margin-bottom: 0;
     margin-top: 254px;
     height: 40px;
+  }
 
+  .last-button {
+    margin-left: 0;
   }
 }
