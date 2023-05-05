@@ -297,7 +297,7 @@ nav {
   margin-bottom: 32px;
 }
 
-.language-skills a {
+.language-skills li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -322,8 +322,8 @@ nav {
   justify-content: center;
   width: 100%;
   height: 363px;
-  margin-left: 13px;
-  margin-right: 13px;
+  
+  
   color: var(--headline-color-1);
 }
 
@@ -354,7 +354,6 @@ nav {
   align-items: center;
   width: 100%;
   height: 50vh;
-  margin-bottom: 59px;
   background: url('./assets/contact_bg.png') no-repeat;
   background-position: 100% 80%, left bottom;
 }
@@ -391,21 +390,25 @@ form textarea {
   padding-left: 16px;
 }
 
-.contact-info {
-  margin-left: ;
+.text-form {
+  margin-left: 13px;
+  margin-right: 13px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .bottom-social {
   margin-bottom: 45px;
 }
 
-.project-skills li:not(:last-child) a {
+.project-skills li:not(:last-child) {
   margin-right: 8px;
 }
 
 /* mobile screens */
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 767px) {
   /* Add your mobile styles here */
+  
 }
 
 /* desktop screens */
@@ -478,5 +481,14 @@ form textarea {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+  }
+  .contact-info p{
+    display: none;
+  }
+  .bottom-social {
+    margin-bottom: 0;
+    margin-top: 254px;
+    height: 40px;
+
   }
 }
