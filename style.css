@@ -29,10 +29,9 @@ li {
 
 nav {
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
-  height: 48px;
-  top: 44px;
+  margin-top: 44px;
 }
 
 .navbar ul {
@@ -42,12 +41,7 @@ nav {
 .hamburger_toggle {
   display: block;
   cursor: pointer;
-  margin-right: 1rem;
-  margin-top: 0.75rem;
-  align-items: center;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  margin-right: 1.5rem;
   width: 2rem;
   height: 1.75rem;
   background: var(--background-color);
@@ -59,23 +53,16 @@ nav {
 }
 
 .container {
-  height: 100%;
   background: url('./assets/header_mobile.png');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center center;
-  width: 100%;
-  margin-top: 27px;
 }
 
 .headline {
-  height: 90%;
-  width: 90%;
-  top: 55.17px;
   overflow: hidden;
   margin: 0 27px;
   text-align: center;
-  justify-content: center;
 }
 
 .headline h1 {
@@ -101,17 +88,17 @@ nav {
 
 .headline-social {
   flex-direction: row;
-  align-items: center;
   justify-content: center;
   padding: 0;
   height: 19.62px;
   width: 170px;
-  margin: 22.89px auto 0 70px;
+  margin: 22.89px auto 0 50px;
 }
 
 .headline-social ul {
   display: flex;
   flex-direction: row;
+  align-items: baseline;
   padding: 0 10px;
   margin: 0;
 }
@@ -132,20 +119,18 @@ nav {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 100vh;
-  margin: 10px 0 0 0;
+  margin-right: 28px;
+  margin-left: 26px;
 }
 
 /* Project title work */
 .title h2 {
-  color: var(--headline-color-1);
+  width: 327px;
   height: 97px;
+  color: var(--headline-color-1);
   font-weight: 700;
   line-height: 52px;
   font-size: 40px;
-  margin-top: 63px;
-  margin-right: 28px;
-  margin-left: 26px;
   margin-bottom: 24px;
 }
 
@@ -163,7 +148,7 @@ nav {
   grid-template-rows: 252px auto 48px;
   border-radius: 8px;
   border: 1px solid var(--project-background-color);
-  margin-bottom: 29px;
+  margin-bottom: 24px;
 }
 
 .project-image {
@@ -178,29 +163,23 @@ nav {
 
 .project-skills {
   display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.project-skills a {
-  color: var(--header-mobile-color);
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  padding: 11.6px;
-  border-radius: 4px;
-  background: var(--skills-background-color);
-}
-
-.project-skills ul {
-  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 0;
   margin: 0;
+}
+
+.project-skills > li {
+  color: var(--header-mobile-color);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  padding: 9.6px;
+  margin-right: 8px;
+  border-radius: 4px;
+  background: var(--skills-background-color);
 }
 
 .button {
@@ -215,14 +194,11 @@ nav {
   margin-bottom: 24px;
   background-color: var(--project-button-color);
   border-radius: 4px;
-  border: none;
-}
-
-.button a {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--background-color);
+  border: none;
 }
 
 .about-me {
@@ -235,14 +211,19 @@ nav {
 }
 
 .about-me h2 {
+  width: 351px;
+  height: 48px;
   font-weight: 700;
   line-height: 52px;
   font-size: 40px;
   text-align: center;
   color: var(--headline-color-1);
+  margin-bottom: 0;
 }
 
 .about-me p {
+  width: 351px;
+  height: 194px;
   margin-left: 12px;
   margin-right: 18px;
   padding-left: 2px;
@@ -258,7 +239,7 @@ nav {
 
 .language-grid {
   width: 327px;
-  height: 100vh;
+  height: 40vh;
   background: var(--skills-background-color);
   border: 1px solid #c1c7d0;
   border-radius: 8px;
@@ -282,7 +263,7 @@ nav {
   text-align: center;
 }
 
-.language-skills ul {
+.language-skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -292,7 +273,7 @@ nav {
   margin-bottom: 32px;
 }
 
-.language-skills a {
+.language-skills > li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -308,9 +289,9 @@ nav {
 
 .project-text {
   display: flex;
-  text-align: center;
   justify-content: center;
-  width: 100%;
+  margin-top: 54px;
+  width: 327px;
   height: 363px;
   margin-left: 13px;
   margin-right: 13px;
@@ -323,6 +304,7 @@ nav {
   line-height: 52px;
   color: var(--headline-color-1);
   margin-right: 20px;
+  text-align: center;
 }
 
 .navbar li a {
@@ -340,10 +322,8 @@ nav {
 .contact-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100vh;
+  margin-top: 58px;
   margin-bottom: 59px;
   background: url('./assets/contact_bg.png') no-repeat;
   background-position: 100% 80%, left bottom;
@@ -361,7 +341,7 @@ form input {
   flex-direction: row;
   box-sizing: border-box;
   height: 48px;
-  width: 100%;
+  width: 327px;
   border: 1px solid var(--project-background-color);
   border-radius: 4px;
   margin-bottom: 24px;
@@ -370,11 +350,17 @@ form input {
 
 form :placeholder-shown {
   padding-left: 16px;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
 }
 
 form textarea {
   height: 114px;
-  width: 100%;
+  width: 327px;
   background: var(--background-color);
   border: 1px solid #60c095;
   border-radius: 4px;
