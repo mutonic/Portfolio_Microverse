@@ -38,13 +38,9 @@
 
 This project is about building a portfolio project  with HTML CSS
 
-**[your_project__name]** is a Portfolio 
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-This portfolio website built using HTML, CSS, Git and GitHub. It showcases  work, skills, and achievements, typically used by creatives and professionals to display their projects, services, and experience to potential clients or employers. 
 
 <details>
   <summary>HTML</summary>
@@ -71,20 +67,11 @@ This portfolio website built using HTML, CSS, Git and GitHub. It showcases  work
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **Project Showcase**
 - **Skills**
 - **Mobile responsive**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
-- Not yet deployed <a href='#deployment'><a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,90 +79,49 @@ This portfolio website built using HTML, CSS, Git and GitHub. It showcases  work
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
 
 ### Setup
+To get a local copy up and running, follow these steps.
 
+### Prerequisites
+
+In order to run this project you need:
+- npm
+- Node.js
+- Terminal
+- Code editor
+- Linters files
+
+Example command:
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
+
 
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone git@github.com:mutonic/Portfolio_Microverse.git
 ```
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
-
 ```sh
-  cd my-project
-  gem install
+  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
 ```
---->
 
-### Usage
-
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Author1**
 
@@ -190,9 +136,7 @@ Example:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[About Section]**
-- [ ] **[Project Done]**
-- [ ] **[Skills used]**
+- [ ] **Annimation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -212,15 +156,13 @@ Feel free to check the [issues page](../../issues/).
 
 If you liked this project, don't hesitate to give it a star to support it
 
-If you like this project...
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank...
+I would like to thank Microverse for their great curriculum and my collegues at Microverse
 
 ## 📝 License <a name="license"></a>
 
