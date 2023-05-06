@@ -514,7 +514,7 @@ form textarea {
   .button:hover,
   button a:hover {
     animation-name: change_color;
-    animation-duration: 1s;
+    animation-duration: 0.25s;
   }
 
   @keyframes change_color {
