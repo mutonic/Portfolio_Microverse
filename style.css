@@ -519,8 +519,7 @@ form textarea {
 
   @keyframes change_color {
     to {
-      background-color: yellow;
-      color: rgba(189, 161, 69, 0.5);
+      background-color: var(--button-pressed-color);
     }
   }
 
