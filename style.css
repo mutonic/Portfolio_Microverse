@@ -64,6 +64,41 @@ nav {
   margin: 0 1rem;
 }
 
+.headline-social li {
+  margin: 0 12px;
+}
+
+.project-skills li {
+  color: var(--header-mobile-color);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  padding: 11.6px;
+  border-radius: 4px;
+  background: var(--skills-background-color);
+}
+
+.language-skills li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: var(--headline-color-2);
+  background: var(--background-color);
+  border-radius: 8px;
+  grid-row: 1;
+}
+
+.navbar li:hover {
+  transform: scale(2, 2);
+  transition: all 0.5s cubic-bezier();
+}
+
 .container {
   height: 100%;
   width: 100%;
@@ -116,10 +151,6 @@ nav {
   justify-content: center;
   padding: 0 10px;
   margin: 0;
-}
-
-.headline-social li {
-  margin: 0 12px;
 }
 
 .scroll-button {
@@ -182,17 +213,6 @@ nav {
   align-items: center;
   margin: 0;
   padding: 0;
-}
-
-.project-skills li {
-  color: var(--header-mobile-color);
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  padding: 11.6px;
-  border-radius: 4px;
-  background: var(--skills-background-color);
 }
 
 .project-skills ul {
@@ -298,21 +318,6 @@ nav {
   gap: 8px;
   width: 100%;
   margin-bottom: 32px;
-}
-
-.language-skills li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: var(--headline-color-2);
-  background: var(--background-color);
-  border-radius: 8px;
-  grid-row: 1;
 }
 
 .language-skills {
@@ -504,6 +509,19 @@ form textarea {
   .scroll-button img:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .button:hover,
+  button a:hover {
+    animation-name: change_color;
+    animation-duration: 1s;
+  }
+
+  @keyframes change_color {
+    to {
+      background-color: yellow;
+      color: rgba(189, 161, 69, 0.5);
+    }
   }
 
   .about-me {
