@@ -22,6 +22,7 @@
 
 body {
   background: var(--background-color);
+  overflow-x: hidden;
 }
 
 li {
@@ -62,6 +63,41 @@ nav {
 
 .navbar li {
   margin: 0 1rem;
+}
+
+.headline-social li {
+  margin: 0 12px;
+}
+
+.project-skills li {
+  color: var(--header-mobile-color);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  padding: 11.6px;
+  border-radius: 4px;
+  background: var(--skills-background-color);
+}
+
+.language-skills li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: var(--headline-color-2);
+  background: var(--background-color);
+  border-radius: 8px;
+  grid-row: 1;
+}
+
+.navbar li:hover {
+  transform: scale(2, 2);
+  transition: all 0.5s cubic-bezier();
 }
 
 .container {
@@ -116,10 +152,6 @@ nav {
   justify-content: center;
   padding: 0 10px;
   margin: 0;
-}
-
-.headline-social li {
-  margin: 0 12px;
 }
 
 .scroll-button {
@@ -182,17 +214,6 @@ nav {
   align-items: center;
   margin: 0;
   padding: 0;
-}
-
-.project-skills a {
-  color: var(--header-mobile-color);
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  padding: 11.6px;
-  border-radius: 4px;
-  background: var(--skills-background-color);
 }
 
 .project-skills ul {
@@ -298,21 +319,6 @@ nav {
   gap: 8px;
   width: 100%;
   margin-bottom: 32px;
-}
-
-.language-skills li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: var(--headline-color-2);
-  background: var(--background-color);
-  border-radius: 8px;
-  grid-row: 1;
 }
 
 .language-skills {
@@ -437,7 +443,20 @@ form textarea {
   }
 
   .container {
-    background: url('./assets/Header-desktop.svg') no-repeat;
+    background: url('./assets/Header-desktop.svg') no-repeat center center;
+    background-size: cover;
+  }
+
+  @keyframes container {
+    0% {
+      background: url('./assets/Header-desktop.svg') no-repeat center center;
+      background-size: cover;
+    }
+
+    100% {
+      background: url('./assets/Header-desktop.svg') no-repeat center center;
+      background-size: cover;
+    }
   }
 
   .headline {
@@ -474,6 +493,35 @@ form textarea {
     grid-gap: 20px;
     margin-left: 15%;
     margin-right: 15%;
+  }
+
+  .project-grid,
+  .language-grid,
+  .button,
+  .headline-social li,
+  .scroll-button img {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .project-grid:hover,
+  .language-grid:hover,
+  .button:hover,
+  .headline-social li:hover,
+  .scroll-button img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .button:hover,
+  button a:hover {
+    animation-name: change_color;
+    animation-duration: 0.25s;
+  }
+
+  @keyframes change_color {
+    to {
+      background-color: var(--button-pressed-color);
+    }
   }
 
   .about-me {
@@ -555,5 +603,12 @@ form textarea {
   .last-button {
     margin-left: 0;
     color: var(--background-color);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333;
+    color: #f5f5f5;
   }
 }
