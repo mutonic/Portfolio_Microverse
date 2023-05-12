@@ -36,7 +36,8 @@
 
 
 
-This project is about building a portfolio project  with HTML CSS
+This project aims to create a personal portfolio website using HTML and CSS. The main goal of the website is to showcase the projects that I have completed in the past, highlighting the skills that I have developed. In addition, the website will also feature a contact form that allows visitors to get in touch with me for potential future collaborations. The website will serve as a digital representation of my work and skills, helping me to establish my professional online presence.
+(<a href='https://www.loom.com/share/19cafb10af5446f0bd9c6ec185404b08'>Here is my presentation of the current project, including the challenges I have encountered and my plans for future improvements.</a>)
 
 ## 🛠 Built With <a name="built-with"></a>
 
