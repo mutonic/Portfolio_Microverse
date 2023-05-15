@@ -135,7 +135,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   padding: 0 10px;
-  margin: 0;
+  margin-right: 20%;
 }
 
 .scroll-button {
@@ -233,6 +233,7 @@ nav {
   background-color: var(--project-button-color);
   border-radius: 4px;
   border: none;
+  color: var(--background-color);
 }
 
 .button a {
@@ -403,11 +404,14 @@ form textarea {
   flex-wrap: wrap;
   width: 100%;
 }
+.contact-info  .headline-paragraph{
+  display: flex;
+}
 
 .contact-info .headline-paragraph {
   justify-content: center;
   align-items: center;
-  margin-left: 28%;
+  margin-left: 18%;
 }
 
 .bottom-social {
@@ -418,9 +422,15 @@ form textarea {
   margin-right: 8px;
 }
 
+.last-p p {
+  margin-right: 20%;
+}
+
+
 /* mobile screens */
 @media only screen and (max-width: 767px) {
   /* Add your mobile styles here */
+  
 }
 
 /* desktop screens */
@@ -476,6 +486,10 @@ form textarea {
     justify-content: center;
     padding-left: 5%;
     padding-right: 5%;
+  }
+
+  .headline-social ul {
+    margin-right: 10%;
   }
 
   .scroll-button {
@@ -598,17 +612,12 @@ form textarea {
     margin-bottom: 0;
     margin-top: 254px;
     height: 40px;
+    justify-content: center;
+    align-items: center;
   }
 
   .last-button {
     margin-left: 0;
     color: var(--background-color);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #333;
-    color: #f5f5f5;
   }
 }
