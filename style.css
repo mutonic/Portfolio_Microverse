@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -41,24 +41,23 @@ nav {
   display: none;
 }
 
-.hamburger_toggle {
+.hamburger-menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   cursor: pointer;
   margin-left: 80%;
   margin-top: 0.75rem;
-  order: 0;
-  flex-grow: 0;
-  width: 2rem;
+  width: 2.5rem;
   height: 1.75rem;
-  background: var(--background-color);
   border: none;
+  padding-right: 0.25rem;
+  background: rgba(255, 255, 255, 0.8);
 }
 
-.hamburger_toggle img {
-  padding-right: 0.25rem;
-  padding-top: 0.2rem;
+.hamburger-menu span {
+  color: #000;
+  font-size: 2rem;
 }
 
 .navbar li {
@@ -87,7 +86,7 @@ nav {
 .container {
   height: 100%;
   width: 100%;
-  background: url('./assets/header_mobile.png') no-repeat center center/100%;
+  background: url("./assets/header_mobile.png") no-repeat center center/100%;
   margin-top: 27px;
 }
 
@@ -164,6 +163,8 @@ nav {
   margin-right: 28px;
   margin-left: 26px;
   margin-bottom: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .indicator {
@@ -244,7 +245,9 @@ nav {
 }
 
 .about-me {
-  background: url('./assets/about_me_bg_right.png') no-repeat, url('./assets/about_me_bg_left.png') no-repeat;
+  background:
+    url("./assets/about_me_bg_right.png") no-repeat,
+    url("./assets/about_me_bg_left.png") no-repeat;
   background-size: 18%, 18%;
   padding-top: 68px;
   background-position: 100% -10%, left bottom;
@@ -353,7 +356,7 @@ nav {
 
 .navbar li:hover {
   transform: scale(2, 2);
-  transition: all 0.5s cubic-bezier();
+  transition: all 0.5s ease-in-out;
 }
 
 .contact-form {
@@ -363,7 +366,7 @@ nav {
   align-items: center;
   width: 100%;
   height: 50vh;
-  background: url('./assets/contact_bg.png') no-repeat;
+  background: url("./assets/contact_bg.png") no-repeat;
   background-position: 100% 80%, left bottom;
 }
 
@@ -404,11 +407,9 @@ form textarea {
   flex-wrap: wrap;
   width: 100%;
 }
-.contact-info  .headline-paragraph{
-  display: flex;
-}
 
 .contact-info .headline-paragraph {
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 18%;
@@ -426,17 +427,57 @@ form textarea {
   margin-right: 20%;
 }
 
-
 /* mobile screens */
 @media only screen and (max-width: 767px) {
   /* Add your mobile styles here */
-  
+  .mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color: var(--background-color);
+    padding-top: 0;
+    transition: 0.4s;
+  }
+
+  .mobile-nav.active {
+    left: 0;
+  }
+
+  .mobile-nav a {
+    display: block;
+    width: 100%;
+    color: var(--header-mobile-color);
+    font-weight: 600;
+    line-height: 44px;
+    font-size: 32px;
+    margin-left: 28px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+  }
+
+  .mobile-nav button {
+    cursor: pointer;
+    margin-left: 85%;
+    margin-top: 5%;
+    border: none;
+    background: var(--background-color);
+    color: #67798e;
+    font-size: 1rem;
+  }
 }
 
 /* desktop screens */
 @media only screen and (min-width: 768px) {
   /* Add your desktop styles here */
-  .hamburger_toggle {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .mobile-nav {
     display: none;
   }
 
@@ -453,18 +494,18 @@ form textarea {
   }
 
   .container {
-    background: url('./assets/Header-desktop.svg') no-repeat center center;
+    background: url("./assets/Header-desktop.svg") no-repeat center center;
     background-size: cover;
   }
 
   @keyframes container {
     0% {
-      background: url('./assets/Header-desktop.svg') no-repeat center center;
+      background: url("./assets/Header-desktop.svg") no-repeat center center;
       background-size: cover;
     }
 
     100% {
-      background: url('./assets/Header-desktop.svg') no-repeat center center;
+      background: url("./assets/Header-desktop.svg") no-repeat center center;
       background-size: cover;
     }
   }
@@ -572,9 +613,9 @@ form textarea {
 
   body {
     background:
-      url('./assets/illustration-desktop-left-contact.png') no-repeat,
-      url('./assets/illustration-desktop-right-contact.png') no-repeat,
-      url('./assets/illustration-desktop-middle-right-contact.png') no-repeat;
+      url("./assets/illustration-desktop-left-contact.png") no-repeat,
+      url("./assets/illustration-desktop-right-contact.png") no-repeat,
+      url("./assets/illustration-desktop-middle-right-contact.png") no-repeat;
     background-size: 197px 195px, 200px 420px, 100px 100px;
     background-repeat: no-repeat;
     background-position: 1% 93%, 100% 96%, 55% 93%;
