@@ -19,3 +19,9 @@ function resetMenu() {
 hamburger.addEventListener('click', toggleMenu);
 closeHam.addEventListener('click', resetMenu);
 
+links.forEach((link) => {
+  link.addEventListener('click', () => {
+    hamburgerIcon.innerText = 'menu';
+    mobileMenu.classList.remove('active');
+  });
+});
