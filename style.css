@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -60,6 +60,7 @@ nav {
   font-size: 2rem;
 }
 
+/*
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -68,11 +69,11 @@ nav {
   height: 100vh;
   z-index: 99%;
   opacity: 0;
-  transform: translateY(-100px);
+  transform: translateY(-300px);
   background-color: var(--background-color);
   color: var(--header-mobile-color);
   transition: 0.3s;
-}
+} */
 
 .navbar li {
   margin: 0 1rem;
@@ -100,7 +101,7 @@ nav {
 .container {
   height: 100%;
   width: 100%;
-  background: url('./assets/header_mobile.png') no-repeat center center/100%;
+  background: url("./assets/header_mobile.png") no-repeat center center/100%;
   margin-top: 27px;
 }
 
@@ -177,6 +178,8 @@ nav {
   margin-right: 28px;
   margin-left: 26px;
   margin-bottom: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .indicator {
@@ -257,7 +260,9 @@ nav {
 }
 
 .about-me {
-  background: url('./assets/about_me_bg_right.png') no-repeat, url('./assets/about_me_bg_left.png') no-repeat;
+  background:
+    url("./assets/about_me_bg_right.png") no-repeat,
+    url("./assets/about_me_bg_left.png") no-repeat;
   background-size: 18%, 18%;
   padding-top: 68px;
   background-position: 100% -10%, left bottom;
@@ -366,7 +371,7 @@ nav {
 
 .navbar li:hover {
   transform: scale(2, 2);
-  transition: all 0.5s cubic-bezier();
+  transition: all 0.5s ease-in-out;
 }
 
 .contact-form {
@@ -376,7 +381,7 @@ nav {
   align-items: center;
   width: 100%;
   height: 50vh;
-  background: url('./assets/contact_bg.png') no-repeat;
+  background: url("./assets/contact_bg.png") no-repeat;
   background-position: 100% 80%, left bottom;
 }
 
@@ -440,26 +445,26 @@ form textarea {
 /* mobile screens */
 @media only screen and (max-width: 767px) {
   /* Add your mobile styles here */
-  .nav-menu {
-    display: none;
-  }
-
-  .mobile-menu.active {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .mobile-menu button {
-    margin-left: 85%;
-    margin-top: 5%;
-    border: none;
-    background: var(--background-color);
-    color: #67798e;
-    font-size: 1rem;
-  }
-
-  .mobile-menu a {
+  .mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
     display: block;
+    z-index: 98;
+    background-color: var(--background-color);
+    padding-top: 0;
+    transition: 0.4s;
+  }
+
+  .mobile-nav.active {
+    left: 0;
+  }
+
+  .mobile-nav a {
+    display: block;
+    width: 100%;
     color: var(--header-mobile-color);
     font-weight: 600;
     line-height: 44px;
@@ -467,6 +472,16 @@ form textarea {
     margin-left: 28px;
     margin-bottom: 30px;
     transition: 0.3s;
+  }
+
+  .mobile-nav button {
+    cursor: pointer;
+    margin-left: 85%;
+    margin-top: 5%;
+    border: none;
+    background: var(--background-color);
+    color: #67798e;
+    font-size: 1rem;
   }
 }
 
@@ -490,18 +505,18 @@ form textarea {
   }
 
   .container {
-    background: url('./assets/Header-desktop.svg') no-repeat center center;
+    background: url("./assets/Header-desktop.svg") no-repeat center center;
     background-size: cover;
   }
 
   @keyframes container {
     0% {
-      background: url('./assets/Header-desktop.svg') no-repeat center center;
+      background: url("./assets/Header-desktop.svg") no-repeat center center;
       background-size: cover;
     }
 
     100% {
-      background: url('./assets/Header-desktop.svg') no-repeat center center;
+      background: url("./assets/Header-desktop.svg") no-repeat center center;
       background-size: cover;
     }
   }
@@ -609,9 +624,9 @@ form textarea {
 
   body {
     background:
-      url('./assets/illustration-desktop-left-contact.png') no-repeat,
-      url('./assets/illustration-desktop-right-contact.png') no-repeat,
-      url('./assets/illustration-desktop-middle-right-contact.png') no-repeat;
+      url("./assets/illustration-desktop-left-contact.png") no-repeat,
+      url("./assets/illustration-desktop-right-contact.png") no-repeat,
+      url("./assets/illustration-desktop-middle-right-contact.png") no-repeat;
     background-size: 197px 195px, 200px 420px, 100px 100px;
     background-repeat: no-repeat;
     background-position: 1% 93%, 100% 96%, 55% 93%;
