@@ -60,21 +60,6 @@ nav {
   font-size: 2rem;
 }
 
-/*
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 99%;
-  opacity: 0;
-  transform: translateY(-300px);
-  background-color: var(--background-color);
-  color: var(--header-mobile-color);
-  transition: 0.3s;
-} */
-
 .navbar li {
   margin: 0 1rem;
 }
@@ -489,6 +474,10 @@ form textarea {
 @media only screen and (min-width: 768px) {
   /* Add your desktop styles here */
   .hamburger-menu {
+    display: none;
+  }
+
+  .mobile-nav {
     display: none;
   }
 
