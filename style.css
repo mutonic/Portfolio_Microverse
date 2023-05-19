@@ -341,6 +341,13 @@ nav {
   margin-left: 1%;
 }
 
+.project-buttons a {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--background-color);
+  text-align: center;
+}
+
 .navbar li a {
   color: var(--header-mobile-color);
 }
@@ -352,6 +359,14 @@ nav {
 .button:hover {
   background: var(--button-pressed-color);
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.project-techno ul li {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 8px;
+  background-color: var(--skills-background-color);
+  border-radius: 4px;
 }
 
 .navbar li:hover {
@@ -368,7 +383,6 @@ nav {
   height: 50vh;
   background: url("./assets/contact_bg.png") no-repeat;
   background-position: 100% 80%, left bottom;
-  
 }
 
 form {
@@ -429,6 +443,7 @@ form textarea {
 }
 
 /* Project PopUp */
+
 /* PopUP styling */
 .project-section {
   background-color: #c1c7d0;
@@ -494,17 +509,8 @@ form textarea {
   margin-bottom: 12px;
 }
 
-.project-techno ul li {
-  font-size: 12px;
-  font-weight: 600;
-  font-style: semi-bold;
-  padding: 8px;
-  background-color: var(--skills-background-color);
-  border-radius: 4px;
-}
-
 .project-techno ul li.framework {
-  display: none ;
+  display: none;
 }
 
 .project-detail {
@@ -514,11 +520,9 @@ form textarea {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  font-style: regular;
   color: var(--header-desktop-color);
   margin-bottom: 16px;
 }
-
 
 .project-buttons {
   display: flex;
@@ -526,23 +530,13 @@ form textarea {
   margin-bottom: 20px;
 }
 
-
-
 .project-buttons button {
   background-color: var(--project-button-color);
-  color: var(--background-color); 
+  color: var(--background-color);
   height: 48px;
   width: 135px;
   border: none;
   border-radius: 4px;
-  
-}
-
-.project-buttons a {
-  font-size: 16px;
-  font-weight: 67px;
-  color: var(--background-color);
-  text-align: center;
 }
 
 .project-buttons img {
