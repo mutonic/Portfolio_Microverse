@@ -80,17 +80,17 @@ workContainer.innerHTML = projectHTML;
 
 /* Project Popup */
 function createButton(label, link, iconSrc) {
-  const button = document.createElement("button");
-  button.classList.add("project-source");
-  const anchor = document.createElement("a");
+  const button = document.createElement('button');
+  button.classList.add('project-source');
+  const anchor = document.createElement('a');
   anchor.href = link;
   anchor.innerHTML = `
     ${label}
     <img src="${iconSrc}" alt="github logo" />
   `;
   button.appendChild(anchor);
-  return button;
-};
+  return button;
+}
 
 const workSec = document.querySelector('.project');
 const openProjectButtons = document.querySelectorAll('.button');
