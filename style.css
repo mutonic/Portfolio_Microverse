@@ -478,6 +478,7 @@ form textarea {
   background: transparent;
   border: none;
   color: var(--background-color);
+  cursor: pointer;
 }
 
 .proj-image img {
@@ -541,6 +542,13 @@ form textarea {
 
 .project-buttons img {
   margin-left: 8px;
+}
+
+/* Error message */
+#email-error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 0;
 }
 
 /* mobile screens */
@@ -810,5 +818,6 @@ form textarea {
     top: 13%;
     right: 25%;
     height: 50px;
+    cursor: pointer;
   }
 }
