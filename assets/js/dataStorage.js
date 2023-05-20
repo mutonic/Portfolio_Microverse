@@ -1,26 +1,24 @@
-// Local storage
-const nameInput = document.getElementById('fullName');
-const emailInput = document.getElementById('email-input');
-const messageInput = document.getElementById('message');
-const allInputs = document.querySelectorAll('input');
-
-const storeData = () => {
-  const inputData = {
-    inputName: nameInput.value,
-    inputEmail: emailInput.value,
-    inputText: messageInput.value,
+// ---------- Preserve datat in Local Storage ---------
+const contactForm = document.getElementById('contact-form');
+const contactEmail = document.getElementById('email-input');
+const formName = document.getElementById('Name');
+const formMessage = document.getElementById('message');
+contactForm.addEventListener('input', () => {
+  const formData = {
+    name: formName.value,
+    email: contactEmail.value,
+    message: formMessage.value,
   };
-  localStorage.setItem('UserData', JSON.stringify(inputData));
-};
 
-allInputs.forEach((input) => {
-  input.addEventListener('input', storeData);
+  localStorage.setItem('contactForm', JSON.stringify(formData));
 });
 
-const prefillData = JSON.parse(localStorage.getItem('UserData'));
-
-if (prefillData) {
-  nameInput.value = prefillData.inputName;
-  emailInput.value = prefillData.inputEmail;
-  messageInput.value = prefillData.inputText;
+function showData() {
+  const userData = JSON.parse(localStorage.getItem('contactForm'));
+  if (userData) {
+    formName.value = userData.name;
+    contactEmail.value = userData.email;
+    formMessage.value = userData.message;
+  }
 }
+showData();
