@@ -544,7 +544,12 @@ form textarea {
   margin-left: 8px;
 }
 
-
+/* Error message */
+#email-error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 0;
+}
 
 /* mobile screens */
 @media only screen and (max-width: 767px) {
