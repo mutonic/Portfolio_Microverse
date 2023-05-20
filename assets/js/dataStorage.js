@@ -13,15 +13,6 @@ const storeData = () => {
   localStorage.setItem('UserData', JSON.stringify(inputData));
 };
 
-const storeData = () => {
-  const inputData = {
-    inputName: nameInput.value,
-    inputEmail: emailInput.value,
-    inputText: messageInput.value,
-  };
-  localStorage.setItem('UserData', JSON.stringify(inputData));
-};
-
 allInputs.forEach((input) => {
   input.addEventListener('input', storeData);
 });
