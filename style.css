@@ -552,7 +552,7 @@ form textarea {
 }
 
 /* mobile screens */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   /* Add your mobile styles here */
   .mobile-nav {
     position: fixed;
